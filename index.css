@@ -37,7 +37,7 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/BackgroundImage.jpg");
+  background-image: url("../img/backgroundimage.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
