@@ -1,12 +1,12 @@
 /* STYLE */
 :root {
-  --branco: #fff;
   --off-white: #fbfbfb;
   --aliceblue: #f0f8ff;
-  --nero: #1c1c1c;
   --uva: #474350;
   --roxo: #5C47C8;
   --lilas: #c8c3d0;
+  --deep-lilac: #9b59b6;
+  --roxoclaro: #986dff;
   --noite: #111;
 }
 
@@ -53,7 +53,7 @@ a{
 }
 
 .titulo2 {
-  background-image: linear-gradient(to right, #9b59b6, #986dff);
+  background-image: linear-gradient(to right, var(--deep-lilac), var(--roxo));
   color: #fff;
   background-clip: text;
   -webkit-background-clip: text;
@@ -79,6 +79,9 @@ a{
 /*== 1 Parte ==*/
 
 .foto {
+  width: 25rem;
+  height: auto;
+  margin-right: 10rem;
   display: block;
   text-align: right;
   border-radius: 20px;
@@ -86,9 +89,6 @@ a{
   border-style: double;
   outline: 6px solid var(--off-white);
   outline-offset: -13px;
-  height: auto;
-  width: 25rem;
-  margin-right: 15rem;
 }
 
 .area{
@@ -112,6 +112,7 @@ a{
 
 .iten-2 .tituloitem{
   font-size: 2.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .AboutMe{
@@ -226,9 +227,6 @@ hr{
 /* FOOTER */
 
 footer{
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
   background-color: var(--roxo);
   color: #fff;
   font-weight: 600;
@@ -265,12 +263,147 @@ footer a{
 
 /* Reponsive Code */
 
+@media screen and (max-width: 1440px) {
+  .apresentacao{
+    width: 160%;
+  }
+
+  .itens{
+    width: 160%;
+  }
+
+  .area{
+    gap: 2rem;
+  }
+
+  footer{
+    width: 160%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
-  .maincontainer{
-    
+  .apresentacao{
+    width: 160%;
+  }
+
+  .itens{
+    width: 160%;
+  }
+
+  footer{
+    width: 160%;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .apresentacao{
+    width: 180%;
+  }
 
+  .itens{
+    width: 180%;
+  }
+
+  .foto{
+    margin-right: 5rem;
+  }
+
+  .container{
+    margin-right: 25rem;
+  }
+
+  #cards{
+    width: 150%;
+  }
+
+  .linguagens{
+    gap: 0.625rem;
+  }
+
+  footer{
+    width: 180%;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .apresentacao{
+    width: 250%;
+  }
+
+  .itens{
+    width: 250%;
+  }
+
+  .foto{
+    width: 20rem;
+    margin-right: 3rem;
+  }
+
+  .area{
+    padding: 6rem 3rem;
+  }
+
+  .projects{
+    padding: 6rem 3rem;
+  }
+
+  #cards{
+    width: auto;
+  }
+
+  #card{
+    flex-basis: auto;
+  }
+
+  footer{
+    width: 250%;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .apresentacao{
+    width: 220%;
+  }
+
+  .itens{
+    width: 220%;
+  }
+
+  .foto{
+    margin-right: 0rem;
+  }
+
+  #cards{
+    width: auto;
+  }
+
+  #card{
+    flex-basis: auto;
+  }
+
+  footer{
+    width: 220%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .apresentacao{
+    width: 245%;
+  }
+
+  .itens{
+    width: 245%;
+  }
+
+  #cards{
+    width: 110%;
+  }
+
+  #card{
+    flex-basis: auto;
+  }
+
+  footer{
+    width: 245%;
+  }
 }
