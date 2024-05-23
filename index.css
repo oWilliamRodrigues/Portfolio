@@ -325,6 +325,33 @@ footer a{
   }
 }
 
+@media screen and (max-width: 480px) {
+  .apresentacao{
+    width: 200%;
+  }
+
+  .itens{
+    width: 200%;
+  }
+
+  .foto {
+    width: 20rem;
+    margin-right: auto;
+  }
+
+  #cards{
+    width: 100%;
+  }
+
+  #card{
+    flex-basis: auto;
+  }
+
+  footer{
+    width: 200%;
+  }
+}
+
 @media screen and (max-width: 425px){
   .apresentacao{
     width: 250%;
